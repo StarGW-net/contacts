@@ -1,0 +1,11 @@
+Contacts Organised by Group:
+
+• Select any Android account
+• Fast view by groups
+• Large Text
+• Launch Contacts App
+
+Version 3
+=========
+First Fdroid Vesion
+

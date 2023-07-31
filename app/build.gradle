@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "net.stargw.contacts"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 3
+        versionName "3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = "${applicationId}-${variant.buildType.name}-v${defaultConfig.versionName}.apk"
+            Task swTask = project.task("zzz${variant.name}", type: Copy) {
+                from output.outputFile.getParent()
+                into file("apks")
+                include output.outputFileName
+                // rename(output.outputFileName, "${applicationId}-${variant.buildType.name}-v${defaultConfig.versionName}.apk")
+                rename(output.outputFileName,output.outputFileName);
+
+            }
+            variant.assemble.finalizedBy(swTask)
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:27.1.1'
+}
