@@ -5,7 +5,4 @@ Contacts Organised by Group:
 • Large Text
 • Launch Contacts App
 
-Version 3
-=========
-First Fdroid Vesion
 
