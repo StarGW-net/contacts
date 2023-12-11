@@ -1,10 +1,15 @@
-A free simple app to list all APKs:
+Contacts Organised by Group:
 
-• Friendly app name<br>
-• FQDN app names<br>
-• Disabled Apps<br>
-• System Apps<br>
-• Export as a CSV<br>
+• Select any Android account
+• Fast view by groups
+• Large Text
+• Launch Contacts App
+
+<table><tr><td>
+<img src="https://github.com/StarGW-net/contacts/blob/main/metadata/en-US/images/phoneScreenshots/01b.png?raw=true"
+     alt="FX Rates"
+     height="320">
+</td></tr></table>
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
      alt="Get it on F-Droid"
