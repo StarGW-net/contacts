@@ -6,8 +6,8 @@ Contacts Organised by Group:
 • Launch Contacts App
 
 <table><tr><td>
-<img src="https://github.com/StarGW-net/contacts/blob/main/metadata/en-US/images/phoneScreenshots/01b.png?raw=true"
-     alt="FX Rates"
+<img src="https://github.com/StarGW-net/contacts/blob/main/metadata/en-US/images/phoneScreenshots/1.png?raw=true"
+     alt="Contacts"
      height="320">
 </td></tr></table>
 
